@@ -7,9 +7,12 @@
   <title>Parth Vadodariya — Backend Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%2300d084'/%3E%3Ctext x='8' y='12' font-family='monospace' font-size='10' font-weight='700' fill='%23000' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
+  <!-- Icon library: Iconify (unpkg) -->
+  <script src="https://unpkg.com/@iconify/iconify@3.1.1/dist/iconify.min.js"></script>
+  <!-- Lucide icons via Iconify -->
 </head>
 <body>
   <div class="dot-bg" aria-hidden="true"></div>
@@ -22,13 +25,15 @@
         <span class="logo-text">parth.dev</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#github">GitHub</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"><span class="iconify" data-icon="lucide:user"></span> About</a></li>
+        <li><a href="#skills"><span class="iconify" data-icon="lucide:layers"></span> Skills</a></li>
+        <li><a href="#projects"><span class="iconify" data-icon="lucide:briefcase"></span> Work</a></li>
+        <li><a href="#github"><span class="iconify" data-icon="mdi:github"></span> GitHub</a></li>
+        <li><a href="#contact"><span class="iconify" data-icon="lucide:mail"></span> Contact</a></li>
       </ul>
-      <a href="mailto:parthvadodariya2005@gmail.com" class="nav-cta">Hire me</a>
+      <a href="mailto:parthvadodariya2005@gmail.com" class="nav-cta">
+        <span class="iconify" data-icon="lucide:handshake"></span> Hire me
+      </a>
     </div>
   </nav>
 
@@ -37,7 +42,7 @@
     <!-- HERO -->
     <header class="hero">
       <div class="container">
-        <div class="card hero-card">
+        <div class="card glass hero-card">
           <div class="hero-top">
             <div class="hero-avatar">
               <img src="https://avatars.githubusercontent.com/itsparth-victor" alt="Parth Vadodariya" onerror="this.outerHTML='<span class=\'avatar-fallback\'>PV</span>'" />
@@ -49,24 +54,58 @@
           </div>
           <h1 class="hero-name">Parth Vadodariya</h1>
           <p class="hero-role">Backend Developer &middot; Python &middot; FastAPI &middot; AI Systems</p>
-          <p class="hero-loc">Based in Jamnagar, Gujarat, India</p>
+          <p class="hero-loc">
+            <span class="iconify" data-icon="lucide:map-pin"></span> Jamnagar, Gujarat, India
+          </p>
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Work</a>
-            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            <a href="#projects" class="btn btn-primary">
+              <span class="iconify" data-icon="lucide:layout-grid"></span> View Work
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <span class="iconify" data-icon="lucide:send"></span> Get in touch
+            </a>
           </div>
           <div class="hero-socials">
             <a href="https://github.com/itsparth-victor" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5Z"/></svg>
+              <span class="iconify" data-icon="mdi:github"></span>
               <span>itsparth-victor</span>
             </a>
             <a href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              <span class="iconify" data-icon="mdi:linkedin"></span>
               <span>LinkedIn</span>
             </a>
-            <a href="mailto:parthvadodariya2005@gmail.com" aria-label="Email">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              <span>Email</span>
-            </a>
+          </div>
+        </div>
+
+        <!-- What I do quick row -->
+        <div class="what-row">
+          <div class="what-item">
+            <span class="iconify what-icon" data-icon="lucide:server"></span>
+            <div>
+              <span class="what-title">Backend APIs</span>
+              <span class="what-sub">FastAPI · Flask · async</span>
+            </div>
+          </div>
+          <div class="what-item">
+            <span class="iconify what-icon" data-icon="lucide:database"></span>
+            <div>
+              <span class="what-title">Data &amp; Schema</span>
+              <span class="what-sub">PostgreSQL · SQLAlchemy</span>
+            </div>
+          </div>
+          <div class="what-item">
+            <span class="iconify what-icon" data-icon="lucide:sparkles"></span>
+            <div>
+              <span class="what-title">AI Integration</span>
+              <span class="what-sub">Gemini · Claude · SSE</span>
+            </div>
+          </div>
+          <div class="what-item">
+            <span class="iconify what-icon" data-icon="lucide:rocket"></span>
+            <div>
+              <span class="what-title">Deployment</span>
+              <span class="what-sub">Render · Neon · Vercel</span>
+            </div>
           </div>
         </div>
       </div>
@@ -75,9 +114,9 @@
     <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container">
-        <div class="card">
+        <div class="card glass">
           <div class="card-head">
-            <span class="card-tag">01</span>
+            <span class="card-tag"><span class="iconify" data-icon="lucide:user"></span> 01</span>
             <h2 class="card-title">About</h2>
           </div>
           <p class="about-text">
@@ -87,15 +126,11 @@
             Looking for backend or fullstack roles where clean architecture matters.
           </p>
           <div class="about-stats">
-            <div class="stat">
-              <span class="stat-num">9</span>
-              <span class="stat-label">API modules built</span>
-            </div>
-            <div class="stat">
+            <div class="stat glass-mini">
               <span class="stat-num">3</span>
-              <span class="stat-label">Production projects</span>
+              <span class="stat-label">Projects</span>
             </div>
-            <div class="stat">
+            <div class="stat glass-mini">
               <span class="stat-num">2026</span>
               <span class="stat-label">B.E. graduate</span>
             </div>
@@ -107,52 +142,51 @@
     <!-- SKILLS -->
     <section class="section" id="skills">
       <div class="container">
-        <div class="card">
+        <div class="card glass">
           <div class="card-head">
-            <span class="card-tag">02</span>
+            <span class="card-tag"><span class="iconify" data-icon="lucide:layers"></span> 02</span>
             <h2 class="card-title">Skills &amp; Stack</h2>
           </div>
           <div class="skills-grid">
-            <div class="skill-group">
-              <h3 class="skill-title">Languages</h3>
+            <div class="skill-group glass-mini">
+              <h3 class="skill-title"><span class="iconify" data-icon="lucide:code-2"></span> Languages</h3>
               <div class="skill-tags">
-                <span class="tag">Python</span>
-                <span class="tag">SQL</span>
-                <span class="tag">Bash</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:python"></span> Python</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="vscode-icons:file-type-sql"></span> SQL</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:terminal"></span> Bash</span>
               </div>
             </div>
-            <div class="skill-group">
-              <h3 class="skill-title">Backend</h3>
+            <div class="skill-group glass-mini">
+              <h3 class="skill-title"><span class="iconify" data-icon="lucide:server"></span> Backend</h3>
               <div class="skill-tags">
-                <span class="tag">FastAPI</span>
-                <span class="tag">Flask</span>
-                <span class="tag">REST API</span>
-                <span class="tag">JWT Auth</span>
-                <span class="tag">RBAC</span>
-                <span class="tag">SSE Streaming</span>
-                <span class="tag">AsyncIO</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:fastapi"></span> FastAPI</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:flask"></span> Flask</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:globe"></span> REST API</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:key-round"></span> JWT Auth</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:shield-check"></span> RBAC</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:zap"></span> SSE Streaming</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:repeat"></span> AsyncIO</span>
               </div>
             </div>
-            <div class="skill-group">
-              <h3 class="skill-title">Databases</h3>
+            <div class="skill-group glass-mini">
+              <h3 class="skill-title"><span class="iconify" data-icon="lucide:database"></span> Databases</h3>
               <div class="skill-tags">
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">SQLite</span>
-                <span class="tag">SQLAlchemy</span>
-                <span class="tag">asyncpg</span>
-                <span class="tag">Alembic</span>
-                <span class="tag">Firebase</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:postgresql"></span> PostgreSQL</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:sqlite"></span> SQLite</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:sqlalchemy"></span> SQLAlchemy</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:alembic"></span> Alembic</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:firebase"></span> Firebase</span>
               </div>
             </div>
-            <div class="skill-group">
-              <h3 class="skill-title">Core</h3>
+            <div class="skill-group glass-mini">
+              <h3 class="skill-title"><span class="iconify" data-icon="lucide:cpu"></span> Core</h3>
               <div class="skill-tags">
-                <span class="tag">OOP</span>
-                <span class="tag">Data Structures</span>
-                <span class="tag">Pydantic</span>
-                <span class="tag">Git</span>
-                <span class="tag">Shell</span>
-                <span class="tag">Linux</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:boxes"></span> OOP</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:git-branch"></span> Data Structures</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:pydantic"></span> Pydantic</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:git-icon"></span> Git</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:terminal-square"></span> Shell</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:linux-tux"></span> Linux</span>
               </div>
             </div>
           </div>
@@ -163,45 +197,45 @@
     <!-- TOOLS & IDEs -->
     <section class="section" id="tools">
       <div class="container">
-        <div class="card">
+        <div class="card glass">
           <div class="card-head">
-            <span class="card-tag">03</span>
+            <span class="card-tag"><span class="iconify" data-icon="lucide:wrench"></span> 03</span>
             <h2 class="card-title">Tools &amp; IDEs</h2>
           </div>
           <div class="tools-grid">
-            <div class="tool-block">
-              <span class="tool-label">AI Workflow</span>
+            <div class="tool-block glass-mini">
+              <span class="tool-label"><span class="iconify" data-icon="lucide:sparkles"></span> AI Workflow</span>
               <div class="skill-tags">
-                <span class="tag">Claude AI</span>
-                <span class="tag">Cursor</span>
-                <span class="tag">Copilot CLI</span>
-                <span class="tag">Gemini API</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:anthropic"></span> Claude AI</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:cursor"></span> Cursor</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:githubcopilot"></span> Copilot CLI</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:googlegemini"></span> Google Gemini</span>
               </div>
             </div>
-            <div class="tool-block">
-              <span class="tool-label">IDEs &amp; Editors</span>
+            <div class="tool-block glass-mini">
+              <span class="tool-label"><span class="iconify" data-icon="lucide:square-code"></span> IDEs &amp; Editors</span>
               <div class="skill-tags">
-                <span class="tag">VS Code</span>
-                <span class="tag">PyCharm</span>
-                <span class="tag">Cursor</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:visual-studio-code"></span> VS Code</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:pycharm"></span> PyCharm</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:cursor"></span> Cursor</span>
               </div>
             </div>
-            <div class="tool-block">
-              <span class="tool-label">Terminal &amp; CLI</span>
+            <div class="tool-block glass-mini">
+              <span class="tool-label"><span class="iconify" data-icon="lucide:terminal"></span> Terminal &amp; CLI</span>
               <div class="skill-tags">
-                <span class="tag">Bash</span>
-                <span class="tag">PowerShell</span>
-                <span class="tag">Git CLI</span>
-                <span class="tag">gh CLI</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:bash-icon"></span> Bash</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:microsoft-powershell"></span> PowerShell</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:git-icon"></span> Git CLI</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:github-octocat"></span> gh CLI</span>
               </div>
             </div>
-            <div class="tool-block">
-              <span class="tool-label">Deployment</span>
+            <div class="tool-block glass-mini">
+              <span class="tool-label"><span class="iconify" data-icon="lucide:rocket"></span> Deployment</span>
               <div class="skill-tags">
-                <span class="tag">Render</span>
-                <span class="tag">Neon PostgreSQL</span>
-                <span class="tag">Vercel</span>
-                <span class="tag">GitHub Pages</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:render"></span> Render</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:neon"></span> Neon PostgreSQL</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:vercel-icon"></span> Vercel</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:githubpages"></span> GitHub Pages</span>
               </div>
             </div>
           </div>
@@ -212,16 +246,18 @@
     <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="container">
-        <div class="card">
+        <div class="card glass">
           <div class="card-head">
-            <span class="card-tag">04</span>
+            <span class="card-tag"><span class="iconify" data-icon="lucide:briefcase"></span> 04</span>
             <h2 class="card-title">Selected Work</h2>
           </div>
           <div class="projects-list">
 
-            <article class="project">
+            <article class="project glass-mini">
               <div class="project-head">
-                <h3 class="project-name">OmniSensus Medical</h3>
+                <h3 class="project-name">
+                  <span class="iconify" data-icon="lucide:stethoscope"></span> OmniSensus Medical
+                </h3>
                 <span class="project-type">Clinical Decision Support Backend</span>
               </div>
               <p class="project-desc">
@@ -230,10 +266,10 @@
                 Render with Neon PostgreSQL.
               </p>
               <div class="skill-tags project-tags">
-                <span class="tag">FastAPI</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">SQLAlchemy</span>
-                <span class="tag">JWT</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:fastapi"></span> FastAPI</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:postgresql"></span> PostgreSQL</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:sqlalchemy"></span> SQLAlchemy</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:key-round"></span> JWT</span>
               </div>
               <ul class="project-points">
                 <li>Async FastAPI with Neon PostgreSQL via asyncpg, deployed on Render</li>
@@ -248,9 +284,11 @@
               </div>
             </article>
 
-            <article class="project">
+            <article class="project glass-mini">
               <div class="project-head">
-                <h3 class="project-name">AI Powered Chat-Bot</h3>
+                <h3 class="project-name">
+                  <span class="iconify" data-icon="lucide:message-square"></span> AI Powered Chat-Bot
+                </h3>
                 <span class="project-type">Full-Stack AI Application</span>
               </div>
               <p class="project-desc">
@@ -258,10 +296,10 @@
                 Server-Sent Events, persistent chat history, and Google Gemini integration.
               </p>
               <div class="skill-tags project-tags">
-                <span class="tag">Flask</span>
-                <span class="tag">SQLite</span>
-                <span class="tag">Gemini API</span>
-                <span class="tag">SSE</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:flask"></span> Flask</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:sqlite"></span> SQLite</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:googlegemini"></span> Gemini API</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:zap"></span> SSE</span>
               </div>
               <ul class="project-points">
                 <li>Real-time token streaming via SSE — no polling, instant response feel</li>
@@ -275,9 +313,11 @@
               </div>
             </article>
 
-            <article class="project">
+            <article class="project glass-mini">
               <div class="project-head">
-                <h3 class="project-name">Restaurant POS &amp; Analytics</h3>
+                <h3 class="project-name">
+                  <span class="iconify" data-icon="lucide:utensils"></span> Restaurant POS &amp; Analytics
+                </h3>
                 <span class="project-type">Business Management System</span>
               </div>
               <p class="project-desc">
@@ -285,10 +325,10 @@
                 automated PDF invoice generation, and CSV reporting for restaurant businesses.
               </p>
               <div class="skill-tags project-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Dashboard</span>
-                <span class="tag">PDF Export</span>
-                <span class="tag">CSV Export</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="logos:python"></span> Python</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:bar-chart-3"></span> Dashboard</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:file-text"></span> PDF Export</span>
+                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:file-spreadsheet"></span> CSV Export</span>
               </div>
               <ul class="project-points">
                 <li>Admin login with product and menu management</li>
@@ -310,37 +350,40 @@
     <!-- GITHUB -->
     <section class="section" id="github">
       <div class="container">
-        <div class="card">
+        <div class="card glass">
           <div class="card-head">
-            <span class="card-tag">05</span>
+            <span class="card-tag"><span class="iconify" data-icon="mdi:github"></span> 05</span>
             <h2 class="card-title">GitHub Activity</h2>
             <a class="card-link" href="https://github.com/itsparth-victor" target="_blank" rel="noopener">
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <span class="iconify" data-icon="mdi:github"></span>
               @itsparth-victor
+              <span class="iconify" data-icon="lucide:arrow-up-right"></span>
             </a>
           </div>
 
           <div class="gh-stats">
-            <div class="gh-stat">
+            <div class="gh-stat glass-mini">
               <span class="gh-stat-num" id="gh-repos">—</span>
-              <span class="gh-stat-label">Public repos</span>
+              <span class="gh-stat-label"><span class="iconify" data-icon="lucide:book-marked"></span> Public repos</span>
             </div>
-            <div class="gh-stat">
+            <div class="gh-stat glass-mini">
               <span class="gh-stat-num" id="gh-followers">—</span>
-              <span class="gh-stat-label">Followers</span>
+              <span class="gh-stat-label"><span class="iconify" data-icon="lucide:users"></span> Followers</span>
             </div>
-            <div class="gh-stat">
+            <div class="gh-stat glass-mini">
               <span class="gh-stat-num" id="gh-following">—</span>
-              <span class="gh-stat-label">Following</span>
+              <span class="gh-stat-label"><span class="iconify" data-icon="lucide:user-plus"></span> Following</span>
             </div>
-            <div class="gh-stat">
+            <div class="gh-stat glass-mini">
               <span class="gh-stat-num" id="gh-stars">—</span>
-              <span class="gh-stat-label">Total stars</span>
+              <span class="gh-stat-label"><span class="iconify" data-icon="lucide:star"></span> Total stars</span>
             </div>
           </div>
 
-          <div class="gh-block">
-            <span class="tool-label">Contribution Graph</span>
+          <div class="gh-block glass-mini">
+            <span class="tool-label">
+              <span class="iconify" data-icon="lucide:activity"></span> Contribution Graph
+            </span>
             <div class="gh-contrib-wrap">
               <img
                 id="gh-contrib"
@@ -357,22 +400,28 @@
     <!-- EDUCATION -->
     <section class="section" id="education">
       <div class="container">
-        <div class="card">
+        <div class="card glass">
           <div class="card-head">
-            <span class="card-tag">06</span>
+            <span class="card-tag"><span class="iconify" data-icon="lucide:graduation-cap"></span> 06</span>
             <h2 class="card-title">Education</h2>
           </div>
           <ul class="edu-list">
-            <li class="edu-item">
+            <li class="edu-item glass-mini">
               <div class="edu-main">
-                <h3>Bachelor of Engineering — Computer Engineering</h3>
+                <h3>
+                  <span class="iconify" data-icon="lucide:graduation-cap"></span>
+                  Bachelor of Engineering — Computer Engineering
+                </h3>
                 <p>B H Gardi College of Engineering &amp; Technology</p>
               </div>
               <span class="edu-year">2023 – 2026</span>
             </li>
-            <li class="edu-item">
+            <li class="edu-item glass-mini">
               <div class="edu-main">
-                <h3>Diploma — Computer Engineering</h3>
+                <h3>
+                  <span class="iconify" data-icon="lucide:graduation-cap"></span>
+                  Diploma — Computer Engineering
+                </h3>
                 <p>Government Polytechnic Jamnagar</p>
               </div>
               <span class="edu-year">2020 – 2023</span>
@@ -385,9 +434,9 @@
     <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="container">
-        <div class="card contact-card">
+        <div class="card glass contact-card">
           <div class="card-head">
-            <span class="card-tag">07</span>
+            <span class="card-tag"><span class="iconify" data-icon="lucide:mail"></span> 07</span>
             <h2 class="card-title">Get in touch</h2>
           </div>
           <p class="contact-text">
@@ -395,21 +444,26 @@
             If that sounds like your team, let's talk.
           </p>
           <div class="contact-grid">
-            <a class="contact-item" href="mailto:parthvadodariya2005@gmail.com">
-              <span class="contact-label">Email</span>
-              <span class="contact-value">parthvadodariya2005@gmail.com</span>
+            <a class="contact-item glass-mini" href="mailto:parthvadodariya2005@gmail.com">
+              <span class="contact-icon"><span class="iconify" data-icon="lucide:mail"></span></span>
+              <span class="contact-meta">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">parthvadodariya2005@gmail.com</span>
+              </span>
             </a>
-            <a class="contact-item" href="tel:+918200371965">
-              <span class="contact-label">Phone</span>
-              <span class="contact-value">+91 82003 71965</span>
+            <a class="contact-item glass-mini" href="https://github.com/itsparth-victor" target="_blank" rel="noopener">
+              <span class="contact-icon"><span class="iconify" data-icon="mdi:github"></span></span>
+              <span class="contact-meta">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/itsparth-victor</span>
+              </span>
             </a>
-            <a class="contact-item" href="https://github.com/itsparth-victor" target="_blank" rel="noopener">
-              <span class="contact-label">GitHub</span>
-              <span class="contact-value">github.com/itsparth-victor</span>
-            </a>
-            <a class="contact-item" href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener">
-              <span class="contact-label">LinkedIn</span>
-              <span class="contact-value">linkedin.com/in/parthvadodariya</span>
+            <a class="contact-item glass-mini" href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener">
+              <span class="contact-icon"><span class="iconify" data-icon="mdi:linkedin"></span></span>
+              <span class="contact-meta">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/parthvadodariya</span>
+              </span>
             </a>
           </div>
         </div>
@@ -419,8 +473,14 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <span>&copy; 2026 Parth Vadodariya</span>
-      <span>Built in Jamnagar, India</span>
+      <span>
+        <span class="iconify" data-icon="lucide:terminal"></span>
+        &copy; 2026 Parth Vadodariya
+      </span>
+      <span>
+        <span class="iconify" data-icon="lucide:map-pin"></span>
+        Built in Jamnagar, India
+      </span>
     </div>
   </footer>
 
