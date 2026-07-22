@@ -3,237 +3,424 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Parth Vadodariya — Python Backend Developer building production REST APIs, async systems, and AI-integrated platforms." />
   <title>Parth Vadodariya — Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%2300d084'/%3E%3Ctext x='8' y='12' font-family='monospace' font-size='10' font-weight='700' fill='%23000' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
+  <div class="dot-bg" aria-hidden="true"></div>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div class="hero-left">
-          <h1>Parth Vadodariya</h1>
-          <p class="tagline">Python Backend Developer &middot; FastAPI &middot; PostgreSQL &middot; AI Integration</p>
-          <p class="location">Jamnagar, Gujarat, India</p>
-          <div class="hero-links">
-            <a href="mailto:parthvadodariya2005@gmail.com" class="link-item">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              parthvadodariya2005@gmail.com
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-logo">
+        <span class="logo-mark">PV</span>
+        <span class="logo-text">parth.dev</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:parthvadodariya2005@gmail.com" class="nav-cta">Hire me</a>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="card hero-card">
+          <div class="hero-top">
+            <div class="hero-avatar">
+              <img src="https://avatars.githubusercontent.com/itsparth-victor" alt="Parth Vadodariya" onerror="this.outerHTML='<span class=\'avatar-fallback\'>PV</span>'" />
+            </div>
+            <div class="hero-meta">
+              <span class="status-dot"></span>
+              <span class="status-text">Open to opportunities</span>
+            </div>
+          </div>
+          <h1 class="hero-name">Parth Vadodariya</h1>
+          <p class="hero-role">Backend Developer &middot; Python &middot; FastAPI &middot; AI Systems</p>
+          <p class="hero-loc">Based in Jamnagar, Gujarat, India</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Work</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/itsparth-victor" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5Z"/></svg>
+              <span>itsparth-victor</span>
             </a>
-            <a href="tel:+918200371965" class="link-item">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
-              +91 82003 71965
+            <a href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              <span>LinkedIn</span>
             </a>
-            <a href="https://github.com/itsparth-victor" target="_blank" class="link-item">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
-              github.com/itsparth-victor
-            </a>
-            <a href="https://linkedin.com/in/parthvadodariya" target="_blank" class="link-item">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-              linkedin.com/in/parthvadodariya
+            <a href="mailto:parthvadodariya2005@gmail.com" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>Email</span>
             </a>
           </div>
         </div>
-        <div class="hero-right">
-          <p>
-            Recent Computer Engineering graduate with hands-on experience building production
-            REST APIs, async backends, and AI-integrated systems. I work with FastAPI, Flask,
-            PostgreSQL, and tools like Claude AI and Cursor as part of my daily workflow.
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="card">
+          <div class="card-head">
+            <span class="card-tag">01</span>
+            <h2 class="card-title">About</h2>
+          </div>
+          <p class="about-text">
+            Recent Computer Engineering graduate building production REST APIs, async backends,
+            and AI-integrated systems. I work primarily in Python with FastAPI, PostgreSQL,
+            and modern tools like Claude AI and Cursor as part of my daily workflow.
             Looking for backend or fullstack roles where clean architecture matters.
           </p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- SKILLS -->
-  <section class="section" id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-table">
-        <div class="skill-row">
-          <span class="skill-label">Languages</span>
-          <div class="skill-tags">
-            <span class="tag">Python</span>
-          </div>
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Backend</span>
-          <div class="skill-tags">
-            <span class="tag">FastAPI</span>
-            <span class="tag">Flask</span>
-            <span class="tag">REST API</span>
-            <span class="tag">JWT Auth</span>
-            <span class="tag">SSE Streaming</span>
-            <span class="tag">RBAC</span>
-          </div>
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Database</span>
-          <div class="skill-tags">
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">SQLite</span>
-            <span class="tag">SQLAlchemy</span>
-            <span class="tag">asyncpg</span>
-            <span class="tag">Alembic</span>
-            <span class="tag">Firebase</span>
-          </div>
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">AI & Tools</span>
-          <div class="skill-tags">
-            <span class="tag">Claude AI</span>
-            <span class="tag">Cursor</span>
-            <span class="tag">Copilot CLI</span>
-            <span class="tag">Gemini API</span>
-          </div>
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Core</span>
-          <div class="skill-tags">
-            <span class="tag">OOP</span>
-            <span class="tag">Data Structures</span>
-            <span class="tag">Git</span>
-            <span class="tag">Shell Scripting</span>
-            <span class="tag">Pydantic</span>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">9</span>
+              <span class="stat-label">API modules built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Production projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2026</span>
+              <span class="stat-label">B.E. graduate</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section class="section section-alt" id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-
-      <div class="project">
-        <div class="project-info">
-          <div class="project-header">
-            <div>
-              <h3>OmniSensus Medical</h3>
-              <p class="project-type">Clinical Decision Support Backend</p>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="card">
+          <div class="card-head">
+            <span class="card-tag">02</span>
+            <h2 class="card-title">Skills &amp; Stack</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3 class="skill-title">Languages</h3>
+              <div class="skill-tags">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Bash</span>
+              </div>
             </div>
-            <div class="project-tags">
-              <span class="tag">FastAPI</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">SQLAlchemy</span>
-              <span class="tag">JWT</span>
+            <div class="skill-group">
+              <h3 class="skill-title">Backend</h3>
+              <div class="skill-tags">
+                <span class="tag">FastAPI</span>
+                <span class="tag">Flask</span>
+                <span class="tag">REST API</span>
+                <span class="tag">JWT Auth</span>
+                <span class="tag">RBAC</span>
+                <span class="tag">SSE Streaming</span>
+                <span class="tag">AsyncIO</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-title">Databases</h3>
+              <div class="skill-tags">
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">SQLAlchemy</span>
+                <span class="tag">asyncpg</span>
+                <span class="tag">Alembic</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-title">Core</h3>
+              <div class="skill-tags">
+                <span class="tag">OOP</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Pydantic</span>
+                <span class="tag">Git</span>
+                <span class="tag">Shell</span>
+                <span class="tag">Linux</span>
+              </div>
             </div>
           </div>
-          <p class="project-desc">Production-grade async REST API powering an AI clinical intelligence platform. Handles patient data, diagnostics, appointments, and medical Q&amp;A — deployed on Render with Neon PostgreSQL.</p>
-          <ul class="project-points">
-            <li>Async FastAPI with Neon PostgreSQL via asyncpg, deployed on Render</li>
-            <li>JWT authentication and role-based access control with bcrypt password hashing</li>
-            <li>9 modular router domains — auth, patients, doctors, diagnostics, appointments, admin, notifications, ML proxy, support</li>
-            <li>ML proxy bridging backend with AI analytics for readmission risk scoring and clinical Q&A</li>
-            <li>Pydantic schema validation and Alembic for schema evolution</li>
-            <li>API docs secured behind HMAC-protected session tokens with 2-hour rolling expiry</li>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS & IDEs -->
+    <section class="section" id="tools">
+      <div class="container">
+        <div class="card">
+          <div class="card-head">
+            <span class="card-tag">03</span>
+            <h2 class="card-title">Tools &amp; IDEs</h2>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-block">
+              <span class="tool-label">AI Workflow</span>
+              <div class="skill-tags">
+                <span class="tag">Claude AI</span>
+                <span class="tag">Cursor</span>
+                <span class="tag">Copilot CLI</span>
+                <span class="tag">Gemini API</span>
+              </div>
+            </div>
+            <div class="tool-block">
+              <span class="tool-label">IDEs &amp; Editors</span>
+              <div class="skill-tags">
+                <span class="tag">VS Code</span>
+                <span class="tag">PyCharm</span>
+                <span class="tag">Cursor</span>
+              </div>
+            </div>
+            <div class="tool-block">
+              <span class="tool-label">Terminal &amp; CLI</span>
+              <div class="skill-tags">
+                <span class="tag">Bash</span>
+                <span class="tag">PowerShell</span>
+                <span class="tag">Git CLI</span>
+                <span class="tag">gh CLI</span>
+              </div>
+            </div>
+            <div class="tool-block">
+              <span class="tool-label">Deployment</span>
+              <div class="skill-tags">
+                <span class="tag">Render</span>
+                <span class="tag">Neon PostgreSQL</span>
+                <span class="tag">Vercel</span>
+                <span class="tag">GitHub Pages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="card">
+          <div class="card-head">
+            <span class="card-tag">04</span>
+            <h2 class="card-title">Selected Work</h2>
+          </div>
+          <div class="projects-list">
+
+            <article class="project">
+              <div class="project-head">
+                <h3 class="project-name">OmniSensus Medical</h3>
+                <span class="project-type">Clinical Decision Support Backend</span>
+              </div>
+              <p class="project-desc">
+                Production-grade async REST API powering an AI clinical intelligence platform.
+                Handles patient data, diagnostics, appointments, and medical Q&amp;A — deployed on
+                Render with Neon PostgreSQL.
+              </p>
+              <div class="skill-tags project-tags">
+                <span class="tag">FastAPI</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">SQLAlchemy</span>
+                <span class="tag">JWT</span>
+              </div>
+              <ul class="project-points">
+                <li>Async FastAPI with Neon PostgreSQL via asyncpg, deployed on Render</li>
+                <li>JWT authentication and role-based access control with bcrypt</li>
+                <li>9 modular router domains — auth, patients, doctors, diagnostics, appointments, admin, notifications, ML proxy, support</li>
+                <li>ML proxy bridging backend with AI analytics for readmission risk scoring</li>
+                <li>Pydantic schema validation and Alembic for schema evolution</li>
+                <li>API docs secured behind HMAC-protected session tokens with 2-hour rolling expiry</li>
+              </ul>
+              <div class="project-image">
+                <img src="assets/images/omnisensus.png" alt="OmniSensus Medical platform" loading="lazy" />
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-head">
+                <h3 class="project-name">AI Powered Chat-Bot</h3>
+                <span class="project-type">Full-Stack AI Application</span>
+              </div>
+              <p class="project-desc">
+                Full-stack chatbot with real-time token-by-token response streaming via
+                Server-Sent Events, persistent chat history, and Google Gemini integration.
+              </p>
+              <div class="skill-tags project-tags">
+                <span class="tag">Flask</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">Gemini API</span>
+                <span class="tag">SSE</span>
+              </div>
+              <ul class="project-points">
+                <li>Real-time token streaming via SSE — no polling, instant response feel</li>
+                <li>Persistent multi-session chat history stored in SQLite</li>
+                <li>Google Gemini API integration for AI responses</li>
+                <li>User registration and login with session handling</li>
+                <li>Chat history sidebar with new chat creation</li>
+              </ul>
+              <div class="project-image">
+                <img src="assets/images/ai_chatbot.png" alt="AI Chatbot application" loading="lazy" />
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-head">
+                <h3 class="project-name">Restaurant POS &amp; Analytics</h3>
+                <span class="project-type">Business Management System</span>
+              </div>
+              <p class="project-desc">
+                Point-of-sale system with order management, a sales analytics dashboard,
+                automated PDF invoice generation, and CSV reporting for restaurant businesses.
+              </p>
+              <div class="skill-tags project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Dashboard</span>
+                <span class="tag">PDF Export</span>
+                <span class="tag">CSV Export</span>
+              </div>
+              <ul class="project-points">
+                <li>Admin login with product and menu management</li>
+                <li>Dine-In, Takeaway, and Delivery order modes</li>
+                <li>Sales analytics dashboard with trend visualisation</li>
+                <li>Automated PDF invoice generation per order</li>
+                <li>CSV export for sales reports and structured data management</li>
+              </ul>
+              <div class="project-image">
+                <img src="assets/images/pos_dashboard.png" alt="Restaurant POS dashboard" loading="lazy" />
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section class="section" id="github">
+      <div class="container">
+        <div class="card">
+          <div class="card-head">
+            <span class="card-tag">05</span>
+            <h2 class="card-title">GitHub Activity</h2>
+            <a class="card-link" href="https://github.com/itsparth-victor" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              @itsparth-victor
+            </a>
+          </div>
+
+          <div class="gh-stats">
+            <div class="gh-stat">
+              <span class="gh-stat-num" id="gh-repos">—</span>
+              <span class="gh-stat-label">Public repos</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat-num" id="gh-followers">—</span>
+              <span class="gh-stat-label">Followers</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat-num" id="gh-following">—</span>
+              <span class="gh-stat-label">Following</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat-num" id="gh-stars">—</span>
+              <span class="gh-stat-label">Total stars</span>
+            </div>
+          </div>
+
+          <div class="gh-block">
+            <span class="tool-label">Contribution Graph</span>
+            <div class="gh-contrib-wrap">
+              <img
+                id="gh-contrib"
+                src="https://ghchart.rshah.org/00d084/itsparth-victor"
+                alt="GitHub contributions chart for itsparth-victor"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="card">
+          <div class="card-head">
+            <span class="card-tag">06</span>
+            <h2 class="card-title">Education</h2>
+          </div>
+          <ul class="edu-list">
+            <li class="edu-item">
+              <div class="edu-main">
+                <h3>Bachelor of Engineering — Computer Engineering</h3>
+                <p>B H Gardi College of Engineering &amp; Technology</p>
+              </div>
+              <span class="edu-year">2023 – 2026</span>
+            </li>
+            <li class="edu-item">
+              <div class="edu-main">
+                <h3>Diploma — Computer Engineering</h3>
+                <p>Government Polytechnic Jamnagar</p>
+              </div>
+              <span class="edu-year">2020 – 2023</span>
+            </li>
           </ul>
         </div>
-        <div class="project-image">
-          <img src="assets/images/omnisensus.png" alt="OmniSensus Medical platform" />
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="card contact-card">
+          <div class="card-head">
+            <span class="card-tag">07</span>
+            <h2 class="card-title">Get in touch</h2>
+          </div>
+          <p class="contact-text">
+            I'm looking for backend or fullstack roles where good engineering matters.
+            If that sounds like your team, let's talk.
+          </p>
+          <div class="contact-grid">
+            <a class="contact-item" href="mailto:parthvadodariya2005@gmail.com">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">parthvadodariya2005@gmail.com</span>
+            </a>
+            <a class="contact-item" href="tel:+918200371965">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 82003 71965</span>
+            </a>
+            <a class="contact-item" href="https://github.com/itsparth-victor" target="_blank" rel="noopener">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/itsparth-victor</span>
+            </a>
+            <a class="contact-item" href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/parthvadodariya</span>
+            </a>
+          </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="project project-flip">
-        <div class="project-image">
-          <img src="assets/images/ai_chatbot.png" alt="AI Chatbot application" />
-        </div>
-        <div class="project-info">
-          <div class="project-header">
-            <div>
-              <h3>AI Powered Chat-Bot</h3>
-              <p class="project-type">Full-Stack AI Application</p>
-            </div>
-            <div class="project-tags">
-              <span class="tag">Flask</span>
-              <span class="tag">SQLite</span>
-              <span class="tag">Gemini API</span>
-              <span class="tag">SSE</span>
-            </div>
-          </div>
-          <p class="project-desc">Full-stack chatbot with real-time token-by-token response streaming via Server-Sent Events, persistent chat history, and Google Gemini integration.</p>
-          <ul class="project-points">
-            <li>Real-time token streaming via SSE — no polling, instant response feel</li>
-            <li>Persistent multi-session chat history stored in SQLite</li>
-            <li>Google Gemini API integration for AI responses</li>
-            <li>User registration and login with session handling</li>
-            <li>Chat history sidebar with new chat creation</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-info">
-          <div class="project-header">
-            <div>
-              <h3>Restaurant POS &amp; Analytics</h3>
-              <p class="project-type">Business Management System</p>
-            </div>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Dashboard</span>
-              <span class="tag">PDF Export</span>
-              <span class="tag">CSV Export</span>
-            </div>
-          </div>
-          <p class="project-desc">Point-of-sale system with order management, a sales analytics dashboard, automated PDF invoice generation, and CSV reporting for restaurant businesses.</p>
-          <ul class="project-points">
-            <li>Admin login with product and menu management</li>
-            <li>Dine-In, Takeaway, and Delivery order modes</li>
-            <li>Sales analytics dashboard with trend visualisation</li>
-            <li>Automated PDF invoice generation per order</li>
-            <li>CSV export for sales reports and structured data management</li>
-          </ul>
-        </div>
-        <div class="project-image">
-          <img src="assets/images/pos_dashboard.png" alt="Restaurant POS dashboard" />
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section" id="education">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
-      <div class="edu-list">
-        <div class="edu-item">
-          <div class="edu-left">
-            <h3>Bachelor of Engineering — Computer Engineering</h3>
-            <p>B H Gardi College of Engineering &amp; Technology</p>
-          </div>
-          <span class="edu-year">2023 – 2026</span>
-        </div>
-        <div class="edu-divider"></div>
-        <div class="edu-item">
-          <div class="edu-left">
-            <h3>Diploma — Computer Engineering</h3>
-            <p>Government Polytechnic Jamnagar</p>
-          </div>
-          <span class="edu-year">2020 – 2023</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section section-contact" id="contact">
-    <div class="container contact-inner">
-      <h2>Open to new opportunities</h2>
-      <p>I'm looking for backend or fullstack roles where good engineering matters. If that sounds like your team, let's talk.</p>
-      <a href="mailto:parthvadodariya2005@gmail.com" class="btn-primary">Send an Email</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <span>&copy; 2026 - 2027 Parth Vadodariya</span>
-      <span>Jamnagar, Gujarat, India</span>
+      <span>&copy; 2026 Parth Vadodariya</span>
+      <span>Built in Jamnagar, India</span>
     </div>
   </footer>
 
