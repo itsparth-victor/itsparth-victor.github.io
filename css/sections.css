@@ -64,18 +64,45 @@
   width: 100%;
   overflow: hidden;
 }
-.hero-bg {
-  position: absolute;
+
+/* Sticky page-wide background — stays put as you scroll */
+.page-bg {
+  position: fixed;
   inset: 0;
+  z-index: -2;
   background-image: url("../assets/images/itachi-bg.jpg");
   background-size: cover;
   background-position: center right;
+  background-repeat: no-repeat;
   opacity: 0.55;
   filter: contrast(115%) brightness(0.75) saturate(1.2);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.4) 20%, black 55%, black 100%);
           mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.4) 20%, black 55%, black 100%);
   pointer-events: none;
 }
+
+/* Sticky socials sidebar (desktop only) */
+.socials-sidebar { display: none; }
+@media (min-width: 1024px) {
+  .socials-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 0, 40, 0.25);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+}
+
 .hero-bottom-fade {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -276,18 +303,34 @@
 .skill-bar-row.in-view .fill { width: var(--target-width); }
 
 .skills-side { display: flex; flex-direction: column; gap: 1.5rem; }
-.tool-chips { display: flex; flex-wrap: wrap; gap: 0.625rem; }
+.tool-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 0, 40, 0.5);
+  border-radius: 0.75rem;
+  background: rgba(255, 0, 40, 0.15);
+  box-shadow: 0 0 25px rgba(255, 0, 40, 0.15), inset 0 0 25px rgba(255, 0, 40, 0.08);
+}
 .tool-chip {
   display: inline-block;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.03);
-  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 0, 40, 0.7);
+  background: rgba(255, 0, 40, 0.25);
+  color: #fff;
   font-size: 0.75rem;
+  font-weight: 500;
   padding: 0.375rem 1rem;
   border-radius: 999px;
-  transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
-.tool-chip:hover { border-color: rgba(255, 0, 40, 0.6); color: var(--crimson); box-shadow: 0 0 15px rgba(255, 0, 40, 0.3); }
+.tool-chip:hover {
+  background: var(--crimson);
+  border-color: #fff;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 0, 40, 0.6);
+  transform: translateY(-1px);
+}
 .skill-card-callout { margin-top: 2.5rem; padding: 1.5rem; }
 .callout-title { margin-top: 1rem; font-family: var(--font-display); font-size: 1.125rem; color: #fff; }
 .callout-text { margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; }
@@ -362,4 +405,4 @@
 @media (min-width: 640px) { .form-row { grid-template-columns: repeat(2, 1fr); } }
 
 /* Footer */
-.site-footer { border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 2rem 1.5rem; text-align: center; color: var(--text-faint); font-size: 0.75rem; }
+.site-footer { border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 2rem 1.5rem; text-align: center; color: var(--text-faint); font-size: 0.75rem; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
