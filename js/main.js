@@ -13,7 +13,7 @@
   /* ── Navbar: scrolled state + active link on scroll ── */
   const navbar = $("#navbar");
   const navLinks = $$(".nav-link");
-  const sections = ["home", "about", "skills", "projects", "contact"]
+  const sections = ["home", "about", "skills", "projects"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
 
@@ -44,17 +44,23 @@
 
   /* ── Resume modal ────────────────────────────────── */
   const modal = $("#resume-modal");
+  const resumeIframe = $("#resume-iframe");
+  const RESUME_URL = "./assets/Parth_Vadodariya_Resume.pdf";
   const openResume = () => {
     if (!modal) return;
     modal.classList.add("is-open");
     modal.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
+    if (resumeIframe && resumeIframe.src.endsWith("about:blank")) {
+      resumeIframe.src = RESUME_URL;
+    }
   };
   const closeResume = () => {
     if (!modal) return;
     modal.classList.remove("is-open");
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    if (resumeIframe) resumeIframe.src = "about:blank";
   };
 
   document.addEventListener("click", (e) => {
@@ -168,81 +174,4 @@
     { threshold: 0.3 }
   );
   $$(".skill-bar-row").forEach((row) => observer.observe(row));
-
-  /* ── Contact form (mailto submit) ────────────────── */
-  const form = $("#contact-form");
-  const statusEl = $("#form-status");
-  const submitBtn = $("#submit-btn");
-  const btnLabel = submitBtn?.querySelector(".btn-label");
-
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      const subject = form.subject.value.trim();
-      const message = form.message.value.trim();
-
-      if (!name || !email || !message) {
-        showStatus("error", "Please fill in your name, email, and message.");
-        return;
-      }
-
-      if (btnLabel) btnLabel.textContent = "Opening mail client…";
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.querySelector("svg")?.remove();
-        const spinner = document.createElement("span");
-        spinner.className = "spinner";
-        submitBtn.appendChild(spinner);
-      }
-
-      const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-      const mailto =
-        "mailto:parthvadodariya2005@gmail.com" +
-        `?subject=${encodeURIComponent(subject || `Portfolio contact from ${name}`)}` +
-        `&body=${encodeURIComponent(body)}`;
-
-      try {
-        window.location.href = mailto;
-      } catch (_) {
-        // fall through
-      }
-
-      setTimeout(() => {
-        showStatus(
-          "success",
-          "Your mail client opened — message ready to send!"
-        );
-        form.reset();
-        if (btnLabel) btnLabel.textContent = "Send Message";
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.querySelector(".spinner")?.remove();
-          const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-          icon.setAttribute("viewBox", "0 0 24 24");
-          icon.setAttribute("fill", "none");
-          icon.setAttribute("stroke", "currentColor");
-          icon.setAttribute("stroke-width", "2");
-          icon.setAttribute("stroke-linecap", "round");
-          icon.setAttribute("stroke-linejoin", "round");
-          icon.setAttribute("width", "14");
-          icon.setAttribute("height", "14");
-          icon.classList.add("icon");
-          icon.innerHTML = '<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>';
-          submitBtn.appendChild(icon);
-        }
-      }, 500);
-    });
-  }
-
-  function showStatus(kind, text) {
-    if (!statusEl) return;
-    statusEl.hidden = false;
-    statusEl.className = `form-status ${kind}`;
-    statusEl.textContent = text;
-    if (kind === "success") {
-      setTimeout(() => { statusEl.hidden = true; }, 6000);
-    }
-  }
 })();
