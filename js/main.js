@@ -42,37 +42,6 @@
     });
   }
 
-  /* ── Resume modal ────────────────────────────────── */
-  const modal = $("#resume-modal");
-  const resumeIframe = $("#resume-iframe");
-  const RESUME_URL = "./assets/Parth_Vadodariya_Resume.pdf";
-  const openResume = () => {
-    if (!modal) return;
-    modal.classList.add("is-open");
-    modal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-    if (resumeIframe && resumeIframe.src.endsWith("about:blank")) {
-      resumeIframe.src = RESUME_URL;
-    }
-  };
-  const closeResume = () => {
-    if (!modal) return;
-    modal.classList.remove("is-open");
-    modal.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-    if (resumeIframe) resumeIframe.src = "about:blank";
-  };
-
-  document.addEventListener("click", (e) => {
-    const trigger = e.target.closest("[data-action='open-resume']");
-    if (trigger) { e.preventDefault(); openResume(); return; }
-    const closer = e.target.closest("[data-action='close-resume']");
-    if (closer) { e.preventDefault(); closeResume(); }
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeResume();
-  });
-
   /* ── Render skills in info grid ──────────────────── */
   const infoSkills = $("#info-skills");
   if (infoSkills && data.skills) {
