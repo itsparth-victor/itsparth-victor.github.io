@@ -1,0 +1,39 @@
+/* Page-level layout primitives */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+@media (min-width: 1024px) {
+  .container { padding: 0 2.5rem; }
+}
+
+.section {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 4.5rem 0;
+}
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+}
+@media (min-width: 640px) { .section-title { font-size: 2.5rem; } }
+@media (min-width: 1024px) { .section-title { font-size: 3rem; } }
+
+.section-rule {
+  margin-top: 0.25rem;
+  height: 1px;
+  width: 4rem;
+  background: linear-gradient(to right, var(--crimson), transparent);
+}

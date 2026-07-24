@@ -1,0 +1,107 @@
+/* Ambient backdrop, animations, scroll behaviour */
+
+.ambient-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(180, 0, 20, 0.12), transparent 55%),
+    radial-gradient(ellipse at 10% 90%, rgba(180, 0, 20, 0.06), transparent 60%),
+    #000;
+}
+
+.ambient-backdrop .moon {
+  position: absolute;
+  top: -10rem;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #ff0028 0%, #8a0014 35%, #2a0006 60%, transparent 75%);
+  mix-blend-mode: screen;
+  filter: blur(15px);
+  opacity: 0.55;
+  animation: spin-slow 80s linear infinite;
+}
+.ambient-backdrop .smoke {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 80%, rgba(60,0,10,0.35), transparent 50%),
+    radial-gradient(ellipse at 80% 30%, rgba(80,0,20,0.25), transparent 45%);
+  animation: smoke-drift 14s ease-in-out infinite;
+}
+.ambient-backdrop .vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.85) 100%);
+}
+.ambient-backdrop .scanline {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(0deg,
+    rgba(255,255,255,0.012) 0px,
+    rgba(255,255,255,0.012) 1px,
+    transparent 1px,
+    transparent 3px);
+  opacity: 0.4;
+}
+
+.ambient-backdrop .crow {
+  position: absolute;
+  left: 0;
+  width: 3rem; height: 2rem;
+  color: #000;
+  filter: drop-shadow(0 0 4px rgba(255,0,40,0.4));
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'><path d='M2 22 Q 12 6 22 20 Q 30 4 38 20 Q 48 6 58 22 Q 48 18 38 22 Q 30 24 22 22 Q 12 18 2 22 Z' fill='black' stroke='%231a0000'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ambient-backdrop .crow-1 { top: 18%; animation: crow-fly 22s linear 0s infinite; }
+.ambient-backdrop .crow-2 { top: 40%; animation: crow-fly 22s linear 7s infinite; }
+.ambient-backdrop .crow-3 { top: 65%; animation: crow-fly 22s linear 15s infinite; }
+
+.cursor-glow {
+  position: fixed;
+  left: 0; top: 0;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,0,40,0.15), transparent 60%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 0;
+  transform: translate3d(0,0,0);
+  transition: transform 0.15s ease-out;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@keyframes smoke-drift {
+  0%   { transform: translateX(-5%) translateY(0) scale(1); opacity: 0.25; }
+  50%  { transform: translateX(3%) translateY(-2%) scale(1.05); opacity: 0.4; }
+  100% { transform: translateX(-5%) translateY(0) scale(1); opacity: 0.25; }
+}
+@keyframes crow-fly {
+  0%   { transform: translate(-10vw, 20vh) scale(0.6); opacity: 0; }
+  10%  { opacity: 0.7; }
+  90%  { opacity: 0.7; }
+  100% { transform: translate(110vw, 10vh) scale(0.9); opacity: 0; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-backdrop .moon,
+  .ambient-backdrop .smoke,
+  .ambient-backdrop .crow { animation: none; }
+  .cursor-glow { display: none; }
+}

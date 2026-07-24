@@ -1,492 +1,506 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Parth Vadodariya — Python Backend Developer building production REST APIs, async systems, and AI-integrated platforms." />
-  <title>Parth Vadodariya — Backend Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%2300d084'/%3E%3Ctext x='8' y='12' font-family='monospace' font-size='10' font-weight='700' fill='%23000' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
-  <!-- Icon library: Iconify (unpkg) -->
-  <script defer src="https://unpkg.com/@iconify/iconify@3.1.1/dist/iconify.min.js"></script>
-  <!-- Lucide icons via Iconify -->
-</head>
-<body>
-  <div class="dot-bg" aria-hidden="true"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parth Vadodariya — Backend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Parth Vadodariya — Python backend developer building production-grade REST APIs with FastAPI, scalable databases, and AI integrations."
+    />
+    <meta name="theme-color" content="#000000" />
 
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a href="#top" class="nav-logo">
-        <span class="logo-mark">PV</span>
-        <span class="logo-text">parth.dev</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about"><span class="iconify" data-icon="lucide:user"></span> About</a></li>
-        <li><a href="#skills"><span class="iconify" data-icon="lucide:layers"></span> Skills</a></li>
-        <li><a href="#projects"><span class="iconify" data-icon="lucide:briefcase"></span> Work</a></li>
-        <li><a href="#github"><span class="iconify" data-icon="mdi:github"></span> GitHub</a></li>
-        <li><a href="#contact"><span class="iconify" data-icon="lucide:mail"></span> Contact</a></li>
-      </ul>
-      <a href="mailto:parthvadodariya2005@gmail.com" class="nav-cta">
-        <span class="iconify" data-icon="lucide:handshake"></span> Hire me
-      </a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans+JP:wght@300;400;500&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/sections.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+  </head>
+  <body>
+    <!-- Ambient backdrop -->
+    <div class="ambient-backdrop" aria-hidden="true">
+      <div class="moon"></div>
+      <div class="smoke"></div>
+      
+      <div class="vignette"></div>
+      <div class="scanline"></div>
+      <div class="crow crow-1"></div>
+      <div class="crow crow-2"></div>
+      <div class="crow crow-3"></div>
     </div>
-  </nav>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-  <main id="top">
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+      <nav class="nav-inner">
+        <a href="#home" class="nav-logo" aria-label="Home">
+          <svg class="sharingan" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="47" fill="#cc0015" />
+            <circle cx="50" cy="50" r="47" stroke="#111" stroke-width="5" fill="none" />
+            <circle cx="50" cy="50" r="20" stroke="#000" stroke-width="2.5" fill="none" />
+            <circle cx="50" cy="50" r="9" fill="#000" />
+            <g transform="rotate(0 50 50)">
+              <circle cx="50" cy="20" r="7.5" fill="#000" />
+              <path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" />
+            </g>
+            <g transform="rotate(120 50 50)">
+              <circle cx="50" cy="20" r="7.5" fill="#000" />
+              <path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" />
+            </g>
+            <g transform="rotate(240 50 50)">
+              <circle cx="50" cy="20" r="7.5" fill="#000" />
+              <path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" />
+            </g>
+          </svg>
+          <span class="nav-logo-jp">パース</span>
+        </a>
 
-    <!-- HERO -->
-    <header class="hero">
-      <div class="container">
-        <div class="card glass hero-card">
-          <div class="hero-top">
-            <div class="hero-avatar">
-              <img src="https://avatars.githubusercontent.com/itsparth-victor" alt="Parth Vadodariya" width="56" height="56" onerror="this.outerHTML='<span class=\'avatar-fallback\'>PV</span>'" />
-            </div>
-            <div class="hero-meta">
-              <span class="status-dot"></span>
-              <span class="status-text">Open to opportunities</span>
-            </div>
-          </div>
-          <h1 class="hero-name">Parth Vadodariya</h1>
-          <p class="hero-role">Backend Developer &middot; Python &middot; FastAPI &middot; AI Systems</p>
-          <p class="hero-loc">
-            <span class="iconify" data-icon="lucide:map-pin"></span> Jamnagar, Gujarat, India
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">
-              <span class="iconify" data-icon="lucide:layout-grid"></span> View Work
-            </a>
-            <a href="#contact" class="btn btn-ghost">
-              <span class="iconify" data-icon="lucide:send"></span> Get in touch
-            </a>
-          </div>
-          <div class="hero-socials">
-            <a href="https://github.com/itsparth-victor" target="_blank" rel="noopener" aria-label="GitHub">
-              <span class="iconify" data-icon="mdi:github"></span>
-              <span>itsparth-victor</span>
-            </a>
-            <a href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <span class="iconify" data-icon="mdi:linkedin"></span>
-              <span>Parth Vadodariya</span>
-            </a>
-          </div>
-        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-        <!-- What I do quick row -->
-        <div class="what-row">
-          <div class="what-item">
-            <span class="iconify what-icon" data-icon="lucide:server"></span>
-            <div>
-              <span class="what-title">Backend APIs</span>
-              <span class="what-sub">FastAPI · Flask · async</span>
-            </div>
-          </div>
-          <div class="what-item">
-            <span class="iconify what-icon" data-icon="lucide:database"></span>
-            <div>
-              <span class="what-title">Data &amp; Schema</span>
-              <span class="what-sub">PostgreSQL · SQLAlchemy</span>
-            </div>
-          </div>
-          <div class="what-item">
-            <span class="iconify what-icon" data-icon="lucide:sparkles"></span>
-            <div>
-              <span class="what-title">AI Integration</span>
-              <span class="what-sub">Gemini · Claude · SSE</span>
-            </div>
-          </div>
-          <div class="what-item">
-            <span class="iconify what-icon" data-icon="lucide:rocket"></span>
-            <div>
-              <span class="what-title">Deployment</span>
-              <span class="what-sub">Render · Neon · Vercel</span>
-            </div>
-          </div>
-        </div>
-      </div>
+        <button class="btn-crimson nav-cta" data-action="open-resume" type="button">
+          Download CV
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+        </button>
+      </nav>
     </header>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="card glass">
-          <div class="card-head">
-            <span class="card-tag"><span class="iconify" data-icon="lucide:user"></span> 01</span>
-            <h2 class="card-title">About</h2>
-          </div>
-          <p class="about-text">
-            Recent Computer Engineering graduate building production REST APIs, async backends,
-            and AI-integrated systems. I work primarily in Python with FastAPI, PostgreSQL,
-            and modern tools like Claude AI and Cursor as part of my daily workflow.
-            Looking for backend or fullstack roles where clean architecture matters.
-          </p>
-          <div class="about-stats">
-            <div class="stat glass-mini">
-              <span class="stat-num">3</span>
-              <span class="stat-label">Projects</span>
-            </div>
-            <div class="stat glass-mini">
-              <span class="stat-num">2026</span>
-              <span class="stat-label">B.E. graduate</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-bottom-fade" aria-hidden="true"></div>
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="card glass">
-          <div class="card-head">
-            <span class="card-tag"><span class="iconify" data-icon="lucide:layers"></span> 02</span>
-            <h2 class="card-title">Skills &amp; Stack</h2>
-          </div>
-          <div class="skills-grid">
-            <div class="skill-group glass-mini">
-              <h3 class="skill-title"><span class="iconify" data-icon="lucide:code-2"></span> Languages</h3>
-              <div class="skill-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:python"></span> Python</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="vscode-icons:file-type-sql"></span> SQL</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:terminal"></span> Bash</span>
-              </div>
-            </div>
-            <div class="skill-group glass-mini">
-              <h3 class="skill-title"><span class="iconify" data-icon="lucide:server"></span> Backend</h3>
-              <div class="skill-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:fastapi"></span> FastAPI</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:flask"></span> Flask</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:globe"></span> REST API</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:key-round"></span> JWT Auth</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:shield-check"></span> RBAC</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:zap"></span> SSE Streaming</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:repeat"></span> AsyncIO</span>
-              </div>
-            </div>
-            <div class="skill-group glass-mini">
-              <h3 class="skill-title"><span class="iconify" data-icon="lucide:database"></span> Databases</h3>
-              <div class="skill-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:postgresql"></span> PostgreSQL</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:sqlite"></span> SQLite</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:sqlalchemy"></span> SQLAlchemy</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:alembic"></span> Alembic</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:firebase"></span> Firebase</span>
-              </div>
-            </div>
-            <div class="skill-group glass-mini">
-              <h3 class="skill-title"><span class="iconify" data-icon="lucide:cpu"></span> Core</h3>
-              <div class="skill-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:boxes"></span> OOP</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:git-branch"></span> Data Structures</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:pydantic"></span> Pydantic</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:git-icon"></span> Git</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:terminal-square"></span> Shell</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:linux-tux"></span> Linux</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <img
+          src="./assets/images/itachi-portrait.png"
+          alt=""
+          aria-hidden="true"
+          class="hero-portrait-mobile"
+        />
 
-    <!-- TOOLS & IDEs -->
-    <section class="section" id="tools">
-      <div class="container">
-        <div class="card glass">
-          <div class="card-head">
-            <span class="card-tag"><span class="iconify" data-icon="lucide:wrench"></span> 03</span>
-            <h2 class="card-title">Tools &amp; IDEs</h2>
-          </div>
-          <div class="tools-grid">
-            <div class="tool-block glass-mini">
-              <span class="tool-label"><span class="iconify" data-icon="lucide:sparkles"></span> AI Workflow</span>
-              <div class="skill-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:anthropic"></span> Claude AI</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:cursor"></span> Cursor</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:githubcopilot"></span> Copilot CLI</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:googlegemini"></span> Google Gemini</span>
-              </div>
-            </div>
-            <div class="tool-block glass-mini">
-              <span class="tool-label"><span class="iconify" data-icon="lucide:square-code"></span> IDEs &amp; Editors</span>
-              <div class="skill-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:visual-studio-code"></span> VS Code</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:pycharm"></span> PyCharm</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:cursor"></span> Cursor</span>
-              </div>
-            </div>
-            <div class="tool-block glass-mini">
-              <span class="tool-label"><span class="iconify" data-icon="lucide:terminal"></span> Terminal &amp; CLI</span>
-              <div class="skill-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:bash-icon"></span> Bash</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:microsoft-powershell"></span> PowerShell</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:git-icon"></span> Git CLI</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:github-octocat"></span> gh CLI</span>
-              </div>
-            </div>
-            <div class="tool-block glass-mini">
-              <span class="tool-label"><span class="iconify" data-icon="lucide:rocket"></span> Deployment</span>
-              <div class="skill-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:render"></span> Render</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:neon"></span> Neon PostgreSQL</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:vercel-icon"></span> Vercel</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:githubpages"></span> GitHub Pages</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="card glass">
-          <div class="card-head">
-            <span class="card-tag"><span class="iconify" data-icon="lucide:briefcase"></span> 04</span>
-            <h2 class="card-title">Selected Work</h2>
-          </div>
-          <div class="projects-list">
-
-            <article class="project glass-mini">
-              <div class="project-head">
-                <h3 class="project-name">
-                  <span class="iconify" data-icon="lucide:stethoscope"></span> OmniSensus Medical
-                </h3>
-                <span class="project-type">Clinical Decision Support Backend</span>
-              </div>
-              <p class="project-desc">
-                Production-grade async REST API powering an AI clinical intelligence platform.
-                Handles patient data, diagnostics, appointments, and medical Q&amp;A — deployed on
-                Render with Neon PostgreSQL.
-              </p>
-              <div class="skill-tags project-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:fastapi"></span> FastAPI</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:postgresql"></span> PostgreSQL</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:sqlalchemy"></span> SQLAlchemy</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:key-round"></span> JWT</span>
-              </div>
-              <ul class="project-points">
-                <li>Async FastAPI with Neon PostgreSQL via asyncpg, deployed on Render</li>
-                <li>JWT authentication and role-based access control with bcrypt</li>
-                <li>9 modular router domains — auth, patients, doctors, diagnostics, appointments, admin, notifications, ML proxy, support</li>
-                <li>ML proxy bridging backend with AI analytics for readmission risk scoring</li>
-                <li>Pydantic schema validation and Alembic for schema evolution</li>
-                <li>API docs secured behind HMAC-protected session tokens with 2-hour rolling expiry</li>
-              </ul>
-              <div class="project-image">
-                <img src="assets/images/omnisensus.png" alt="OmniSensus Medical platform" loading="lazy" />
-              </div>
-            </article>
-
-            <article class="project glass-mini">
-              <div class="project-head">
-                <h3 class="project-name">
-                  <span class="iconify" data-icon="lucide:message-square"></span> AI Powered Chat-Bot
-                </h3>
-                <span class="project-type">Full-Stack AI Application</span>
-              </div>
-              <p class="project-desc">
-                Full-stack chatbot with real-time token-by-token response streaming via
-                Server-Sent Events, persistent chat history, and Google Gemini integration.
-              </p>
-              <div class="skill-tags project-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:flask"></span> Flask</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:sqlite"></span> SQLite</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="simple-icons:googlegemini"></span> Gemini API</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:zap"></span> SSE</span>
-              </div>
-              <ul class="project-points">
-                <li>Real-time token streaming via SSE — no polling, instant response feel</li>
-                <li>Persistent multi-session chat history stored in SQLite</li>
-                <li>Google Gemini API integration for AI responses</li>
-                <li>User registration and login with session handling</li>
-                <li>Chat history sidebar with new chat creation</li>
-              </ul>
-              <div class="project-image">
-                <img src="assets/images/ai_chatbot.png" alt="AI Chatbot application" loading="lazy" />
-              </div>
-            </article>
-
-            <article class="project glass-mini">
-              <div class="project-head">
-                <h3 class="project-name">
-                  <span class="iconify" data-icon="lucide:utensils"></span> Restaurant POS &amp; Analytics
-                </h3>
-                <span class="project-type">Business Management System</span>
-              </div>
-              <p class="project-desc">
-                Point-of-sale system with order management, a sales analytics dashboard,
-                automated PDF invoice generation, and CSV reporting for restaurant businesses.
-              </p>
-              <div class="skill-tags project-tags">
-                <span class="tag"><span class="iconify tag-icon" data-icon="logos:python"></span> Python</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:bar-chart-3"></span> Dashboard</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:file-text"></span> PDF Export</span>
-                <span class="tag"><span class="iconify tag-icon" data-icon="lucide:file-spreadsheet"></span> CSV Export</span>
-              </div>
-              <ul class="project-points">
-                <li>Admin login with product and menu management</li>
-                <li>Dine-In, Takeaway, and Delivery order modes</li>
-                <li>Sales analytics dashboard with trend visualisation</li>
-                <li>Automated PDF invoice generation per order</li>
-                <li>CSV export for sales reports and structured data management</li>
-              </ul>
-              <div class="project-image">
-                <img src="assets/images/pos_dashboard.png" alt="Restaurant POS dashboard" loading="lazy" />
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GITHUB -->
-    <section class="section" id="github">
-      <div class="container">
-        <div class="card glass">
-          <div class="card-head">
-            <span class="card-tag"><span class="iconify" data-icon="mdi:github"></span> 05</span>
-            <h2 class="card-title">GitHub Activity</h2>
-            <a class="card-link" href="https://github.com/itsparth-victor" target="_blank" rel="noopener">
-              <span class="iconify" data-icon="mdi:github"></span>
-              @itsparth-victor
-              <span class="iconify" data-icon="lucide:arrow-up-right"></span>
-            </a>
-          </div>
-
-          <div class="gh-stats">
-            <div class="gh-stat glass-mini">
-              <span class="gh-stat-num" id="gh-repos">—</span>
-              <span class="gh-stat-label"><span class="iconify" data-icon="lucide:book-marked"></span> Public repos</span>
-            </div>
-            <div class="gh-stat glass-mini">
-              <span class="gh-stat-num" id="gh-followers">—</span>
-              <span class="gh-stat-label"><span class="iconify" data-icon="lucide:users"></span> Followers</span>
-            </div>
-            <div class="gh-stat glass-mini">
-              <span class="gh-stat-num" id="gh-following">—</span>
-              <span class="gh-stat-label"><span class="iconify" data-icon="lucide:user-plus"></span> Following</span>
-            </div>
-            <div class="gh-stat glass-mini">
-              <span class="gh-stat-num" id="gh-stars">—</span>
-              <span class="gh-stat-label"><span class="iconify" data-icon="lucide:star"></span> Total stars</span>
-            </div>
-          </div>
-
-          <div class="gh-block glass-mini">
-            <span class="tool-label">
-              <span class="iconify" data-icon="lucide:activity"></span> Contribution Graph
-            </span>
-            <div class="gh-contrib-wrap">
+        <div class="hero-grid">
+          <!-- Col 1: portrait + socials (desktop only) -->
+          <div class="hero-col-left">
+            <div class="hero-portrait-frame">
               <img
-                id="gh-contrib"
-                src="https://ghchart.rshah.org/00d084/itsparth-victor"
-                alt="GitHub contributions chart for itsparth-victor"
-                width="720"
-                height="112"
-                loading="lazy"
-                decoding="async"
+                src="./assets/images/itachi-portrait.png"
+                alt="Parth Vadodariya"
+                class="hero-portrait"
               />
             </div>
+
+            <div class="hero-socials">
+              <p class="kicker">Socials</p>
+              <div class="socials-list">
+                <a href="https://github.com/itsparth-victor" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.1c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a10.9 10.9 0 0 1 5.74 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.35.78 1.05.78 2.11v3.13c0 .31.21.68.8.56C20.22 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+                  <span class="social-label">GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.6 0h4.37v1.92h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 7v7.46h-4.55v-6.61c0-1.58-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.49V22H7.82V8z"/></svg>
+                  <span class="social-label">LinkedIn</span>
+                </a>
+                <a href="https://x.com/ParthER616" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" class="social-link">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18.244 2H21l-6.52 7.45L22 22h-6.79l-5.32-6.94L3.7 22H1l7.04-8.04L1 2h6.91l4.81 6.36L18.244 2zm-2.38 18h1.86L7.27 4H5.3l10.564 16z"/></svg>
+                  <span class="social-label">Twitter/X</span>
+                </a>
+                <a href="https://www.instagram.com/vadodariya.parth07/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.86 5.86 0 0 0-2.13 1.38A5.86 5.86 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.38 2.13.67.65 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.13-1.38 5.86 5.86 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.13A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+                  <span class="social-label">Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: title content -->
+          <div class="hero-col-main">
+            <p class="hero-greet">こんにちは、I'M</p>
+            <h1 class="hero-title">PARTH</h1>
+            <h1 class="hero-title hero-title-accent">VADODARIYA</h1>
+            <p class="hero-subtitle">Backend Dev <span class="dot">•</span> Python <span class="dot">•</span> Full-Stack</p>
+            <p class="hero-description">
+              I build production-grade REST APIs with FastAPI, design scalable
+              database systems, and integrate AI analytics into real-world
+              applications.
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="#projects" class="btn-crimson">
+                Explore My Work
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+
+              <div class="hero-mobile-socials">
+                <span class="kicker">Socials</span>
+                <div class="socials-icons">
+                  <a href="https://github.com/itsparth-victor" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.1c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a10.9 10.9 0 0 1 5.74 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.35.78 1.05.78 2.11v3.13c0 .31.21.68.8.56C20.22 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg></a>
+                  <a href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.6 0h4.37v1.92h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 7v7.46h-4.55v-6.61c0-1.58-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.49V22H7.82V8z"/></svg></a>
+                  <a href="https://x.com/ParthER616" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" class="social-icon"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2H21l-6.52 7.45L22 22h-6.79l-5.32-6.94L3.7 22H1l7.04-8.04L1 2h6.91l4.81 6.36L18.244 2zm-2.38 18h1.86L7.27 4H5.3l10.564 16z"/></svg></a>
+                  <a href="https://www.instagram.com/vadodariya.parth07/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.86 5.86 0 0 0-2.13 1.38A5.86 5.86 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.38 2.13.67.65 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.13-1.38 5.86 5.86 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.13A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 3: vertical kanji (desktop only) -->
+          <div class="hero-col-kanji" aria-hidden="true">
+            <span class="vertical-jp">開発者 パース</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EDUCATION -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="card glass">
-          <div class="card-head">
-            <span class="card-tag"><span class="iconify" data-icon="lucide:graduation-cap"></span> 06</span>
-            <h2 class="card-title">Education</h2>
+      <!-- INFO GRID -->
+      <section class="info-grid-section">
+        <div class="container">
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-card-head">
+                <svg class="sharingan sharingan-sm" viewBox="0 0 100 100" aria-hidden="true">
+                  <circle cx="50" cy="50" r="47" fill="#cc0015" />
+                  <circle cx="50" cy="50" r="47" stroke="#111" stroke-width="5" fill="none" />
+                  <circle cx="50" cy="50" r="20" stroke="#000" stroke-width="2.5" fill="none" />
+                  <circle cx="50" cy="50" r="9" fill="#000" />
+                  <g transform="rotate(0 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(120 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(240 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                </svg>
+                <h3>About Me</h3>
+              </div>
+              <p class="info-text">A passionate Python backend developer who loves building anime-inspired digital systems.</p>
+              <p class="info-text">Always learning. Always improving.</p>
+              <a href="#about" class="info-cta">More About Me <span class="arrow">→</span></a>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-head">
+                <svg class="sharingan sharingan-sm" viewBox="0 0 100 100" aria-hidden="true">
+                  <circle cx="50" cy="50" r="47" fill="#cc0015" />
+                  <circle cx="50" cy="50" r="47" stroke="#111" stroke-width="5" fill="none" />
+                  <circle cx="50" cy="50" r="20" stroke="#000" stroke-width="2.5" fill="none" />
+                  <circle cx="50" cy="50" r="9" fill="#000" />
+                  <g transform="rotate(0 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(120 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(240 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                </svg>
+                <h3>Skills</h3>
+              </div>
+              <div class="info-skills" id="info-skills">
+                <!-- filled by JS -->
+              </div>
+              <a href="#skills" class="info-cta">View All Skills <span class="arrow">→</span></a>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-head">
+                <svg class="sharingan sharingan-sm" viewBox="0 0 100 100" aria-hidden="true">
+                  <circle cx="50" cy="50" r="47" fill="#cc0015" />
+                  <circle cx="50" cy="50" r="47" stroke="#111" stroke-width="5" fill="none" />
+                  <circle cx="50" cy="50" r="20" stroke="#000" stroke-width="2.5" fill="none" />
+                  <circle cx="50" cy="50" r="9" fill="#000" />
+                  <g transform="rotate(0 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(120 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(240 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                </svg>
+                <h3>Projects</h3>
+              </div>
+              <div class="info-projects" id="info-projects">
+                <!-- filled by JS -->
+              </div>
+              <a href="#projects" class="info-cta">View All Projects <span class="arrow">→</span></a>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-head">
+                <svg class="sharingan sharingan-sm" viewBox="0 0 100 100" aria-hidden="true">
+                  <circle cx="50" cy="50" r="47" fill="#cc0015" />
+                  <circle cx="50" cy="50" r="47" stroke="#111" stroke-width="5" fill="none" />
+                  <circle cx="50" cy="50" r="20" stroke="#000" stroke-width="2.5" fill="none" />
+                  <circle cx="50" cy="50" r="9" fill="#000" />
+                  <g transform="rotate(0 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(120 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(240 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                </svg>
+                <h3>Contact</h3>
+              </div>
+              <p class="info-text">Have a project in mind or want to collaborate?<br />Let's build something legendary.</p>
+              <ul class="info-contact">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#ff0028" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>parthvadodariya2005@gmail.com</span>
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#ff0028" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Jamnagar, Gujarat, India</span>
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#ff0028" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="#ff0028"/></svg>
+                  <span>Open to Opportunities</span>
+                </li>
+              </ul>
+              <a href="#contact" class="info-cta">Get In Touch <span class="arrow">→</span></a>
+            </div>
           </div>
-          <ul class="edu-list">
-            <li class="edu-item glass-mini">
-              <div class="edu-main">
-                <h3>
-                  <span class="iconify" data-icon="lucide:graduation-cap"></span>
-                  Bachelor of Engineering — Computer Engineering
-                </h3>
-                <p>B H Gardi College of Engineering &amp; Technology</p>
-              </div>
-              <span class="edu-year">2023 – 2026</span>
-            </li>
-            <li class="edu-item glass-mini">
-              <div class="edu-main">
-                <h3>
-                  <span class="iconify" data-icon="lucide:graduation-cap"></span>
-                  Diploma — Computer Engineering
-                </h3>
-                <p>Government Polytechnic Jamnagar</p>
-              </div>
-              <span class="edu-year">2020 – 2023</span>
-            </li>
-          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="card glass contact-card">
-          <div class="card-head">
-            <span class="card-tag"><span class="iconify" data-icon="lucide:mail"></span> 07</span>
-            <h2 class="card-title">Get in touch</h2>
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">第一章 · Chapter One</span>
+            <h2 class="section-title">About Me</h2>
+            <span class="section-rule"></span>
           </div>
-          <p class="contact-text">
-            I'm looking for backend or fullstack roles where good engineering matters.
-            If that sounds like your team, let's talk.
-          </p>
+
+          <div class="about-grid">
+            <div class="about-copy">
+              <p class="lead">
+                Python backend developer building production-grade APIs with FastAPI,
+                scalable databases, and AI integrations.
+              </p>
+              <p>
+                I've shipped systems for clinical decision support, real-time chatbots,
+                and POS analytics — always with clean architecture and secure auth.
+              </p>
+              <blockquote class="about-quote">
+                "Real strength is knowing when to be gentle."
+              </blockquote>
+            </div>
+
+            <div class="about-stats">
+              <div class="stat-card">
+                <p class="stat-value">3+</p>
+                <p class="stat-label">Projects</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-value">50+</p>
+                <p class="stat-label">API Endpoints</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-value">4+</p>
+                <p class="stat-label">AI Tools</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">第二章 · Arsenal</span>
+            <h2 class="section-title">Skills &amp; Tools</h2>
+            <span class="section-rule"></span>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-bars" id="skill-bars">
+              <!-- filled by JS -->
+            </div>
+            <div class="skills-side">
+              <p class="kicker muted">Toolkit</p>
+              <div class="tool-chips" id="tool-chips">
+                <!-- filled by JS -->
+              </div>
+
+              <div class="card-noir skill-card-callout">
+                <svg class="sharingan sharingan-sm" viewBox="0 0 100 100" aria-hidden="true">
+                  <circle cx="50" cy="50" r="47" fill="#cc0015" />
+                  <circle cx="50" cy="50" r="47" stroke="#111" stroke-width="5" fill="none" />
+                  <circle cx="50" cy="50" r="20" stroke="#000" stroke-width="2.5" fill="none" />
+                  <circle cx="50" cy="50" r="9" fill="#000" />
+                  <g transform="rotate(0 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(120 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                  <g transform="rotate(240 50 50)"><circle cx="50" cy="20" r="7.5" fill="#000" /><path d="M 56.5 23 C 64 20, 70 32, 66 42 C 63 50, 56 50, 53 46 C 57 43, 59 36, 55 28 Z" fill="#000" /></g>
+                </svg>
+                <p class="callout-title">Genjutsu-level precision in every system.</p>
+                <p class="callout-text">I obsess over async performance, schema integrity, and the moment between request and response. If the API doesn't feel right, it isn't shipped.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">第三章 · Chronicles</span>
+            <h2 class="section-title">Selected Projects</h2>
+            <span class="section-rule"></span>
+          </div>
+
+          <div class="projects-grid" id="projects-grid">
+            <!-- filled by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- QUOTE BAR -->
+      <section class="quote-bar">
+        <svg class="akatsuki-cloud akatsuki-left" viewBox="0 0 220 150" aria-hidden="true">
+          <path d="M 34 105 Q 12 105 10 85 Q 8 67 26 63 Q 20 50 28 38 Q 38 26 54 30 Q 58 14 74 12 Q 90 10 96 24 Q 106 10 124 12 Q 140 14 146 28 Q 158 18 174 28 Q 188 38 184 56 Q 200 60 200 80 Q 200 102 178 104 Q 172 120 154 118 Q 140 116 132 104 Q 120 116 108 116 Q 96 116 86 104 Q 74 120 56 118 Q 36 116 34 105 Z" fill="white"/>
+          <path d="M 38 103 Q 18 103 16 84 Q 14 68 30 65 Q 24 52 32 40 Q 41 29 56 33 Q 60 17 75 15 Q 90 13 96 26 Q 106 13 124 15 Q 139 17 145 30 Q 157 21 171 30 Q 184 40 180 57 Q 195 61 195 81 Q 195 101 175 102 Q 169 117 152 115 Q 139 113 132 102 Q 120 113 108 113 Q 96 113 86 102 Q 74 117 57 115 Q 40 113 38 103 Z" fill="#8b1515"/>
+          <path d="M 56 95 Q 42 94 40 80 Q 38 64 52 60 Q 44 58 42 68" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          <path d="M 86 100 Q 72 100 70 86 Q 67 70 82 65 Q 73 63 72 74" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          <path d="M 148 95 Q 132 98 128 82 Q 124 66 140 61 Q 130 59 128 71" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+        </svg>
+        <svg class="akatsuki-cloud akatsuki-right" viewBox="0 0 220 150" aria-hidden="true">
+          <path d="M 34 105 Q 12 105 10 85 Q 8 67 26 63 Q 20 50 28 38 Q 38 26 54 30 Q 58 14 74 12 Q 90 10 96 24 Q 106 10 124 12 Q 140 14 146 28 Q 158 18 174 28 Q 188 38 184 56 Q 200 60 200 80 Q 200 102 178 104 Q 172 120 154 118 Q 140 116 132 104 Q 120 116 108 116 Q 96 116 86 104 Q 74 120 56 118 Q 36 116 34 105 Z" fill="white"/>
+          <path d="M 38 103 Q 18 103 16 84 Q 14 68 30 65 Q 24 52 32 40 Q 41 29 56 33 Q 60 17 75 15 Q 90 13 96 26 Q 106 13 124 15 Q 139 17 145 30 Q 157 21 171 30 Q 184 40 180 57 Q 195 61 195 81 Q 195 101 175 102 Q 169 117 152 115 Q 139 113 132 102 Q 120 113 108 113 Q 96 113 86 102 Q 74 117 57 115 Q 40 113 38 103 Z" fill="#8b1515"/>
+          <path d="M 56 95 Q 42 94 40 80 Q 38 64 52 60 Q 44 58 42 68" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          <path d="M 86 100 Q 72 100 70 86 Q 67 70 82 65 Q 73 63 72 74" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          <path d="M 148 95 Q 132 98 128 82 Q 124 66 140 61 Q 130 59 128 71" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+        </svg>
+
+        <div class="quote-inner">
+          <svg class="akatsuki-cloud akatsuki-top" viewBox="0 0 220 150" aria-hidden="true">
+            <path d="M 34 105 Q 12 105 10 85 Q 8 67 26 63 Q 20 50 28 38 Q 38 26 54 30 Q 58 14 74 12 Q 90 10 96 24 Q 106 10 124 12 Q 140 14 146 28 Q 158 18 174 28 Q 188 38 184 56 Q 200 60 200 80 Q 200 102 178 104 Q 172 120 154 118 Q 140 116 132 104 Q 120 116 108 116 Q 96 116 86 104 Q 74 120 56 118 Q 36 116 34 105 Z" fill="white"/>
+            <path d="M 38 103 Q 18 103 16 84 Q 14 68 30 65 Q 24 52 32 40 Q 41 29 56 33 Q 60 17 75 15 Q 90 13 96 26 Q 106 13 124 15 Q 139 17 145 30 Q 157 21 171 30 Q 184 40 180 57 Q 195 61 195 81 Q 195 101 175 102 Q 169 117 152 115 Q 139 113 132 102 Q 120 113 108 113 Q 96 113 86 102 Q 74 117 57 115 Q 40 113 38 103 Z" fill="#8b1515"/>
+            <path d="M 56 95 Q 42 94 40 80 Q 38 64 52 60 Q 44 58 42 68" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+            <path d="M 86 100 Q 72 100 70 86 Q 67 70 82 65 Q 73 63 72 74" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+            <path d="M 148 95 Q 132 98 128 82 Q 124 66 140 61 Q 130 59 128 71" fill="none" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          </svg>
+          <p class="quote-line">Those who forgive themselves, and are able to accept their true nature…</p>
+          <p class="quote-accent">They are the strong ones.</p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">第四章 · Signal</span>
+            <h2 class="section-title">Let's Talk</h2>
+            <span class="section-rule"></span>
+          </div>
+
           <div class="contact-grid">
-            <a class="contact-item glass-mini" href="mailto:parthvadodariya2005@gmail.com">
-              <span class="contact-icon"><span class="iconify" data-icon="lucide:mail"></span></span>
-              <span class="contact-meta">
-                <span class="contact-label">Email</span>
-                <span class="contact-value">parthvadodariya2005@gmail.com</span>
-              </span>
-            </a>
-            <a class="contact-item glass-mini" href="https://github.com/itsparth-victor" target="_blank" rel="noopener">
-              <span class="contact-icon"><span class="iconify" data-icon="mdi:github"></span></span>
-              <span class="contact-meta">
-                <span class="contact-label">GitHub</span>
-                <span class="contact-value">itsparth-victor</span>
-              </span>
-            </a>
-            <a class="contact-item glass-mini" href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener">
-              <span class="contact-icon"><span class="iconify" data-icon="mdi:linkedin"></span></span>
-              <span class="contact-meta">
-                <span class="contact-label">LinkedIn</span>
-                <span class="contact-value">Parth Vadodariya</span>
-              </span>
-            </a>
+            <div class="contact-left">
+              <p class="lead">
+                Have a project in mind, or want to collaborate on backend
+                architecture, REST API design, or AI integration? My inbox is
+                always open.
+              </p>
+
+              <ul class="contact-list">
+                <li>
+                  <span class="icon-tile">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#ff0028" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </span>
+                  <a href="mailto:parthvadodariya2005@gmail.com">parthvadodariya2005@gmail.com</a>
+                </li>
+                <li>
+                  <span class="icon-tile">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#ff0028" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </span>
+                  <span>Jamnagar, Gujarat, India</span>
+                </li>
+                <li>
+                  <span class="icon-tile">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#ff0028" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="#ff0028"/></svg>
+                  </span>
+                  <span>Open to Opportunities</span>
+                </li>
+              </ul>
+
+              <div class="contact-socials">
+                <a href="https://github.com/itsparth-victor" target="_blank" rel="noopener noreferrer" class="contact-social" aria-label="GitHub">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.1c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a10.9 10.9 0 0 1 5.74 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.35.78 1.05.78 2.11v3.13c0 .31.21.68.8.56C20.22 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/parthvadodariya" target="_blank" rel="noopener noreferrer" class="contact-social" aria-label="LinkedIn">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.6 0h4.37v1.92h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 7v7.46h-4.55v-6.61c0-1.58-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.49V22H7.82V8z"/></svg>
+                </a>
+                <a href="https://x.com/ParthER616" target="_blank" rel="noopener noreferrer" class="contact-social" aria-label="Twitter/X">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2H21l-6.52 7.45L22 22h-6.79l-5.32-6.94L3.7 22H1l7.04-8.04L1 2h6.91l4.81 6.36L18.244 2zm-2.38 18h1.86L7.27 4H5.3l10.564 16z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <form id="contact-form" class="card-noir contact-form" novalidate>
+              <div class="form-row">
+                <label class="field">
+                  <span class="field-label">Name</span>
+                  <input type="text" name="name" placeholder="Uchiha Itachi" required />
+                </label>
+                <label class="field">
+                  <span class="field-label">Email</span>
+                  <input type="email" name="email" placeholder="you@domain.com" required />
+                </label>
+              </div>
+              <label class="field">
+                <span class="field-label">Subject</span>
+                <input type="text" name="subject" placeholder="A new project awaits" />
+              </label>
+              <label class="field">
+                <span class="field-label">Message</span>
+                <textarea name="message" rows="5" placeholder="Tell me about your idea…" required></textarea>
+              </label>
+
+              <div class="form-status" id="form-status" hidden></div>
+
+              <button type="submit" class="btn-crimson btn-full" id="submit-btn">
+                <span class="btn-label">Send Message</span>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
           </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Parth Vadodariya. Built with HTML, CSS, and a love for the Uchiha.</p>
+    </footer>
+
+    <!-- Resume modal -->
+    <div class="modal" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="resume-title">
+      <div class="modal-overlay" data-action="close-resume"></div>
+      <div class="modal-panel">
+        <div class="modal-head">
+          <div>
+            <p class="kicker">Document Preview</p>
+            <h3 class="modal-title" id="resume-title">Parth Vadodariya — Resume</h3>
+          </div>
+          <div class="modal-actions">
+            <a href="./resumes/Parth_Vadodariya_Resume.pdf" target="_blank" rel="noopener noreferrer" class="modal-icon-btn" title="Open in new tab" aria-label="Open in new tab">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="./resumes/Parth_Vadodariya_Resume.pdf" download class="modal-icon-btn" title="Download" aria-label="Download">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+            <button type="button" class="modal-icon-btn" data-action="close-resume" title="Close" aria-label="Close">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <iframe id="resume-iframe" src="./resumes/Parth_Vadodariya_Resume.pdf#toolbar=0&navpanes=0&statusbar=0&view=FitH" title="Resume PDF"></iframe>
+        </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>
-        <span class="iconify" data-icon="lucide:terminal"></span>
-        &copy; 2026 Parth Vadodariya
-      </span>
-      <span>
-        <span class="iconify" data-icon="lucide:map-pin"></span>
-        Jamnagar, India
-      </span>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
