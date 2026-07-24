@@ -1,0 +1,16 @@
+# Build output
+.output/
+.tanstack/
+.vite/
+.wrangler/
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
